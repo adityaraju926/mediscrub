@@ -1,9 +1,9 @@
 # MediScrub
 
-## Problem You Are Addressing
+## Problem Statement
 In the healthcare industry today, there are thousands that visit hospitals where technology is dated and patient files are being viewed via physical files. This project addresses the critical challenge of processing medical documents while ensuring patient privacy and generating meaningful summaries. This is done by doing a role-based PHI removal process and document summarization to ensure that sensitive data is not leaked while being efficient.
 
-## Data Source(s)
+## Data Source
 This project does not use a formal dataset to help with training. Given that the documents are provided by the user, this project uses the inputted data for summary generation.
 
 ## Review of Relevant Previous Efforts and Literature
@@ -14,10 +14,10 @@ This project does not use a formal dataset to help with training. Given that the
 ## How is MediScrub different?
 This project focuses on privacy by implementing role-based access and PHI detection that the other projects do not address. Furthermore, the other applications are not in a deployable state where as this project contains the UI to allow users to get their information in a straightforward manner. Finally, MediScrub uses various models while two out of the three other projects only use one model.
 
-## Your Model Evaluation Process & Metric Selection
+## Model Evaluation Process & Metric Selection
 The evaluation metrics were calculated by calculating the accuracy, precision, recall and f-1 score based on the raw text extracted from the pdf and the summary files for each of the models. These metrics were chosen as they ensure that there is no information loss and false information while still being balanced.
 
-## Your Modeling Approach
+## Modeling Approach
 
 ### 1. Naive Approach
 - **Method**: Simple sentence extraction based on keyword frequency and position
